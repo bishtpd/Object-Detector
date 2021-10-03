@@ -1,7 +1,7 @@
 <html>
 <head>
 
-	<title>Object Detection</title>
+	<title>Baby monitoring app</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -11,27 +11,25 @@
 
   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
   
-  
-  <link rel="stylesheet" type="text/css" href="case2.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-  <center>
-    <h1>Object detection</h1>
-    <br>
-    <br>
-    <button class = "btn btn-info backbtn" onclick="goback()">Back</button>
-    <br>
-    <br>
-    <br>
-    <h1 id = "status"></h1>
-    <br>
-    <br>
-    
-    
-  </center>
+<body background="background.jpg">
+<center>
+  <h1 class="btn btn-success" style = "font-size: 36px">Baby Monitoring</h1>
+  <br>
+  <br>
+  <h2>If the baby is not detected, an alarm will be played.</h2>
+  <br>
+  <br>
+  <h2 class="btn btn-warning" style = "font-size: 24px" id="statuss">Status</h2>
+  <br>
+  <br>
+  <h2 class="btn btn-warning" style = "font-size: 24px" id="babyfoundyorn"></h2>
+</center>
 
-  <script src="case2.js"></script>
+<script src="main.js"></script>
 
 </body>
+
 </html>

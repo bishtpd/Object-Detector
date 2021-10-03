@@ -1,3 +1,8 @@
+canvas{
+    border-color: brown;
+    border-radius: 30px;
+    border-style: dotted;
+}
 body{
     background-image: url("fsgerfw.jpg");
     

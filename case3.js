@@ -14,22 +14,22 @@ b = 0;
 function setup(){
     canvas = createCanvas(500,400);
     canvas.center();
-    myvideo = createCapture(VIDEO);
-    myvideo.hide();
+    //myvideo = createCapture();
+    //myvideo.hide();
     objectDetector = ml5.objectDetector('cocossd', modelLoaded);
     document.getElementById("status").innerHTML = "Model is detecting possible matches, please stand by.";
 }
 function preload(){
-imag = loadImage("trafic.jpg");
+imag = loadImage("333.jpeg");
 
 }
 function draw(){
-image(myvideo, 0, 0, 500, 400);
+image(imag, 0, 0, 500, 400);
 r = random(255);
 g = random(255);
 b = random(255);
 document.getElementById("status").innerHTML = "Model has detected "+ objects.length + " matches";
-objectDetector.detect(myvideo , gotResult);
+objectDetector.detect(imag , gotResult);
 
 for(i = 0; i < objects.length; i++){
 
@@ -58,4 +58,8 @@ function gotResult(error, result){
         objects = result;
         
     }
+}
+function goback(){
+    window.location = "index.html";
+
 }
